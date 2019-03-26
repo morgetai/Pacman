@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    Event_listener.cpp
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    14-March-2019
   * @brief   Class for events listening. Implementetion of observer pattern

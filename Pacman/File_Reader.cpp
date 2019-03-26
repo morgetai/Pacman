@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    File_Reader.cpp
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    14-March-2019
   * @brief   Class is designed for reading map file.

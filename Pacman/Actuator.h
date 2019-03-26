@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    Actuator.h
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    13-March-2019
   * @brief   Asbtract base class for buttons, checkboxes.

@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    MovableObjects.cpp
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    16-March-2019
   * @brief   Base class for movable objects

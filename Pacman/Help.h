@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    Help.h
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    15-March-2019
   * @brief   Some support classes and functions

@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    InteractiveObjEngine.cpp
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    15-March-2019
   * @brief   Controls dots and fruits objects

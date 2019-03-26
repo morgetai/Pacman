@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    Command.h
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    15-March-2019
   * @brief   Command object

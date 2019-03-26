@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    Actuator_conrol.h
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    13-March-2019
   * @brief   Class for controlling buttons, checkboxes. When menu is being active actuators are attached to this 

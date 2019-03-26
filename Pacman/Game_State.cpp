@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    Game_state.cpp
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    14-March-2019
   * @brief   Game state class. Part of state pattern

@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    Primitives.h
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    16-March-2019
   * @brief   Primitives are: Texture, Image, Text, Sprite, Music, Sound

@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    GhostEngine.h
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    14-March-2019
   * @brief   Controls ghosts behavior

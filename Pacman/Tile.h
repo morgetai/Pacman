@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    Tile.h
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    17-March-2019
   * @brief   Tile class

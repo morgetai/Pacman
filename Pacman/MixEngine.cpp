@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    MixEngine.cpp
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    16-March-2019
   * @brief   MixEngine class is designed for sound control

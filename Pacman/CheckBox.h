@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    Checkbox.h
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    13-March-2019
   * @brief   Implementation of the checkbox

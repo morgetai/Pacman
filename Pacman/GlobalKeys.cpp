@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    GlobalKeys.cpp
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    15-March-2019
   * @brief   Control keys ESC,backspace and close window event. Observer implemention

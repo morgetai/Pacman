@@ -1,7 +1,7 @@
 /**
   *************************************************************************************************************************
   * @file    GhostBase.h
-  * @author  Gridin Andrei
+  * @author  Hridin Andrii
   *          abgridin@gmail.com
   * @date    14-March-2019
   * @brief   Ghosts base class
