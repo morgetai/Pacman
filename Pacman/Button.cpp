@@ -67,7 +67,7 @@ Button::~Button()
 * @note
 * @retval none
 */
-void Button::act()
+void Button::act() 
 {
 	/*execute*/
 	command->execute();

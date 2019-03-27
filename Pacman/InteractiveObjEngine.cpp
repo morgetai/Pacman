@@ -24,7 +24,6 @@
 */
 InteractiveObjEngine::InteractiveObjEngine(std::vector<Dot> dots, std::shared_ptr<SDL_Renderer> r):
 	Dots(std::make_unique<PacDots>(dots,r)),
-	dotscnt(0),
 	firstfruit(false)
 {
 	SDL_Rect ShowFruit , MapPosFruit;

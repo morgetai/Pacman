@@ -59,34 +59,34 @@ public:
 	* @note
 	* @retval 
 	*/
-	virtual void set_state(GhostState);
+	void set_state(const GhostState) override;
 
 	/**
 	* @brief returns ghost state
 	* @note
 	* @retval ghjost state
 	*/
-	virtual GhostState get_state();
+	GhostState get_state() const override ;
 
 	/**
 	* @brief render ghost
 	* @retval none
 	*/
-	virtual void render();
+	void render() override;
 
 	/**
 	* @brief move ghost
 	* @note
 	* @retval returns new ghost rectangle
 	*/
-	virtual SDL_Rect move();
+	SDL_Rect move() override;
 
 	/**
 	* @brief returns ghost to a start point
 	* @note
 	* @retval
 	*/
-	virtual void reset();
+	void reset() override;
 private:
 	/**
 	* @brief moving in chase state
@@ -122,22 +122,22 @@ private:
 	* @note
 	* @retval move
 	*/
-	Move move_from_home(std::unique_ptr<MoveAlgorithmBase>&, SDL_Point);
+	Move move_from_home(const std::unique_ptr<MoveAlgorithmBase>&, SDL_Point);
 	/*private variable*/
 	std::array<std::unique_ptr<Animation>, 4> NormalAnimation;//array of normal animation
 	std::array<std::unique_ptr<Image>, 4> EatenImg;//array of eaten animation 
 	std::unique_ptr<Animation> FrightenedAnim;//pointer to a frightened animation
 	std::unique_ptr<Animation> FrightenedAnimEnd;//pointer to a second frightened animation
 
-	std::unique_ptr<MoveAlgorithmBase> SmartAlgo;//smart move algorithm
-	std::unique_ptr<MoveAlgorithmBase> DummyAlgo;//dummy move algorithm
-	std::unique_ptr<MoveAlgorithmBase> RandomAlgo;//random move algorithm
+	const std::unique_ptr<MoveAlgorithmBase> SmartAlgo;//smart move algorithm
+	const std::unique_ptr<MoveAlgorithmBase> DummyAlgo;//dummy move algorithm
+	const std::unique_ptr<MoveAlgorithmBase> RandomAlgo;//random move algorithm
 
 	std::shared_ptr<MovableObjects> Pacman;//pointer to the pacman
 
-	SDL_Point ScatterPoint;//scatter point 
+	const SDL_Point ScatterPoint;//scatter point 
 	SDL_Point EatenPoint;//eaten point(same as start position)
-	SDL_Point GetFromHousePoint;//point near ghost house
+	const SDL_Point GetFromHousePoint;//point near ghost house
 	SDL_Rect GetFromHouseRect;//rectangle
 	SDL_Rect EatenRect;//rectangle
 

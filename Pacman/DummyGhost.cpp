@@ -234,7 +234,7 @@ void DummyGhost::move_eaten()
 * @note
 * @retval move
 */
-Move DummyGhost::move_from_home(std::unique_ptr<MoveAlgorithmBase>& movealgo, SDL_Point dest)
+Move DummyGhost::move_from_home(const std::unique_ptr<MoveAlgorithmBase>& movealgo, SDL_Point dest)
 {
 	/*if got out of ghost home then use normal algorithm*/
 	if (SDL_PointInRect(&get_pos(), &GetFromHouseRect))
@@ -299,7 +299,7 @@ void DummyGhost::render()
 * @note
 * @retval ghjost state
 */
-GhostState DummyGhost::get_state()
+GhostState DummyGhost::get_state() const
 {
 	return state;
 }

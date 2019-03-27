@@ -60,7 +60,7 @@ public:
 	 size_t size();
 private:
 	typedef std::vector<Dot> Dots;
-	std::unique_ptr<Image> dot_image;
+	const std::unique_ptr<Image> dot_image;
 	Dots dots;
 	std::vector<bool> eaten_dots;
 };

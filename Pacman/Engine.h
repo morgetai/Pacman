@@ -66,13 +66,13 @@ private:
 	*/
 	void change_state(EngineStateType);
 private:
-	std::unique_ptr<Window> window;//pointer to the window
-	std::shared_ptr<Event_listener> EventListener;//
-	std::shared_ptr<Actuator_control> ActuatorControl;//pointer 
-	std::shared_ptr<GlobalKeys> globalkeys;
-	std::unique_ptr<MixEngine> mixengine;//pointer to music control object
-	std::shared_ptr<Music> menumusic;
-	std::shared_ptr<Music> gamemusic;
+	const std::unique_ptr<Window> window;//pointer to the window
+	const std::shared_ptr<Event_listener> EventListener;//
+	const std::shared_ptr<Actuator_control> ActuatorControl;//pointer 
+	const std::shared_ptr<GlobalKeys> globalkeys;
+	const std::unique_ptr<MixEngine> mixengine;//pointer to music control object
+	const std::shared_ptr<Music> menumusic;
+	const std::shared_ptr<Music> gamemusic;
 
 	std::array<std::unique_ptr<EngineState>,3> states;//Pointers to a states objects
 	EngineStateType current_state;

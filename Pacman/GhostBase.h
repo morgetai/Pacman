@@ -45,7 +45,7 @@ public:
 	* @note
 	* @retval
 	*/
-	virtual GhostState get_state() = 0;
+	virtual GhostState get_state() const = 0;
 
 	/**
 	* @brief render a ghost

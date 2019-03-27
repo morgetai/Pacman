@@ -56,14 +56,14 @@ public:
 	* @note
 	* @retval none
 	*/
-	virtual void render();
+	void render() override;
 
 	/**
 	* @brief executes command
 	* @note
 	* @retval none
 	*/
-	virtual void act();
+	void act () override;
 
 	/**
 	* @brief checks to see if cursor is in the Button rectangle
@@ -72,11 +72,11 @@ public:
 	* @param2 y of mause position
 	* @retval true when mouse coursor is in actuator rectangle
 	*/
-	virtual bool check_collision(int x, int y);
+	bool check_collision(int x, int y) override;
 private:
 	SDL_Rect dest;//destination rectangle
-	std::unique_ptr<Font> text;//button text
-	std::unique_ptr<Command_Base> command;//command which is executed when button is pressed
+	const std::unique_ptr<Font> text;//button text
+	const std::unique_ptr<Command_Base> command;//command which is executed when button is pressed
 	static std::unique_ptr<Sprite> button_sprite;//pointer to a sprite object
 };
 

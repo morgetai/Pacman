@@ -34,16 +34,16 @@ public:
 	* @note
 	* @retval
 	*/
-	virtual void run(Engine*);
+	void run(Engine*) override;
 
 	/**
 	* @brief close state
 	* @note
 	* @retval
 	*/
-	virtual void close(Engine*);
+	void close(Engine*) override;
 private:
-	std::unique_ptr<Main_Menu> menu;
+	const std::unique_ptr<Main_Menu> menu;
 };
 
 

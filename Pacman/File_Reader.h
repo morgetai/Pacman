@@ -37,21 +37,21 @@ public:
 	* @note  
 	* @retval vector of tiles objects
 	*/
-	std::vector<Tile> get_tiles();
+	std::vector<Tile> get_tiles() const;
 
 	/**
 	* @brief get dots from map file that's been read
 	* @note
 	* @retval vector of dots objects
 	*/
-	std::vector<Dot> get_pacdots();
+	std::vector<Dot> get_pacdots() const;
 
 	/**
 	* @brief get maze from map file that's been read
 	* @note
 	* @retval maze
 	*/
-	std::vector<int> get_maze();
+	std::vector<int> get_maze() const;
 private:
 	std::vector<Tile> tiles;
 	std::vector<Dot> pac_dots;

@@ -37,9 +37,9 @@ public:
 	* @note
 	* @retval
 	*/
-	virtual void execute() { (receiver->*action)(); }
+	void execute() override { (receiver->*action)(); }
 private:
-	Receiver* receiver;//receiver class
+	Receiver* const receiver;//receiver class
 	Action action;//member function
 };
 
@@ -67,9 +67,9 @@ public:
 	* @note
 	* @retval
 	*/
-	virtual void execute() { (receiver->*action)(param); }
+	void execute() override { (receiver->*action)(param); }
 private:
-	Receiver* receiver;//receiver class
+	Receiver* const receiver;//receiver class
 	Action action;//member function
 	Parameter_Type param;//parameter type
 };

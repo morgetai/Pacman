@@ -232,7 +232,7 @@ void RedGhost::set_state(GhostState _state)
 * @note
 * @retval ghjost state
 */
-GhostState RedGhost::get_state()
+GhostState RedGhost::get_state() const
 {
 	return state;
 }

@@ -167,7 +167,7 @@ File_Reader::File_Reader(int x, int y,std::string path)
 * @note
 * @retval vector of tiles objects
 */
-std::vector<Tile> File_Reader::get_tiles()
+std::vector<Tile> File_Reader::get_tiles() const
 {
 	return tiles;
 }
@@ -177,7 +177,7 @@ std::vector<Tile> File_Reader::get_tiles()
 * @note
 * @retval vector of dots objects
 */
-std::vector<Dot> File_Reader::get_pacdots()
+std::vector<Dot> File_Reader::get_pacdots() const 
 {
 	return pac_dots;
 }
@@ -187,7 +187,7 @@ std::vector<Dot> File_Reader::get_pacdots()
 * @note
 * @retval maze
 */
-std::vector<int> File_Reader::get_maze()
+std::vector<int> File_Reader::get_maze() const 
 {
 	return maze;
 }

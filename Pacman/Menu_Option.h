@@ -40,11 +40,11 @@ public:
 	* @note
 	* @retval
 	*/
-	virtual void render();
+	void render() override;
 private:
-	std::unique_ptr<Image> img;
-	std::unique_ptr<Font> SoundText;
-	std::unique_ptr<Font> MusicText;
+	const std::unique_ptr<Image> img;
+	const std::unique_ptr<Font> SoundText;
+	const std::unique_ptr<Font> MusicText;
 };
 
 #endif

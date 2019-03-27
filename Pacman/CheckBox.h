@@ -38,14 +38,14 @@ public:
 	* @brief rendring the actuator
 	* @retval none
 	*/
-	virtual void render();
+	void render() override;
 
 	/**
 	* @brief executes command
 	* @note
 	* @retval none
 	*/
-	virtual void act();
+	void act() override;
 
 	/**
 	* @brief checks to see if cursor is in the checkbox rectangle
@@ -54,7 +54,7 @@ public:
 	* @param2 y of mause position
 	* @retval true when mouse coursor is in actuator rectangle
 	*/
-	virtual bool check_collision(int x, int y);
+	bool check_collision(int x, int y) override;
 
 	/**
 	* @brief sets a checkbox sprite
@@ -68,7 +68,7 @@ public:
 		std::string);
 private:
 	SDL_Rect dest;//destination recrangle
-	std::unique_ptr<Command_Base> command;//command which is executed when button is pressed
+	const std::unique_ptr<Command_Base> command;//command which is executed when button is pressed
 	bool acted;//true if checkbox is set
 	static std::unique_ptr<Sprite> checkbox_sprite;//pointer to a sprite object
 };

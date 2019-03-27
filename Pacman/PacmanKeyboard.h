@@ -38,12 +38,12 @@ public:
 	* @note updates direction according to pressed key
 	* @retval
 	*/
-	virtual void update();
+	void update() override;
 
 private:
 	std::shared_ptr<Event_listener> ev_listener;
 	std::array<std::unique_ptr<Command_Base>, 5> commands;
-	Uint32 ev_type;//keyboard eve type
+	Uint32 ev_type;//keyboard event type
 };
 
 #endif // ! PACMAN_KEYBOARD_H

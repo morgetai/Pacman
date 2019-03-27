@@ -59,34 +59,34 @@ public:
 	* @param1 new state
 	* @retval
 	*/
-	virtual void set_state(GhostState);
+	void set_state(GhostState) override;
 
 	/**
 	* @brief render ghost
 	* @retval none
 	*/
-	virtual void render();
+	void render() override;
 
 	/**
 	* @brief move ghost
 	* @note
 	* @retval returns new ghost rectangle
 	*/
-	virtual SDL_Rect move();
+	SDL_Rect move() override;
 
 	/**
 	* @brief returns ghost state
 	* @note
 	* @retval ghjost state
 	*/
-	virtual GhostState get_state();
+	GhostState get_state() const override;
 
 	/**
 	* @brief returns ghost to a start point
 	* @note
 	* @retval
 	*/
-	virtual void reset();
+	void reset() override;
 
 	/**/
 private:
@@ -119,8 +119,8 @@ private:
 	/**/
 	std::shared_ptr<MovableObjects> Pacman;
 	/**/
-	std::unique_ptr<SmartAlgoMove> SmartAlgo;
-	std::unique_ptr<RandomAlgoMove> RandomAlgo;
+	const std::unique_ptr<SmartAlgoMove> SmartAlgo;
+	const std::unique_ptr<RandomAlgoMove> RandomAlgo;
 	/**/
 	GhostState state;
 	GhostState prev_state;

@@ -69,7 +69,7 @@ public:
 	void reset();
 private:
 	/**/
-	std::unique_ptr<PacDots> Dots;
+	const std::unique_ptr<PacDots> Dots;
 	std::unique_ptr<Fruit> Fruits;
 	size_t dotscnt;//number of eaten dots
 	Uint32 start_msecond;//start time

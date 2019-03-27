@@ -66,7 +66,7 @@ public:
 private:
 	unsigned long long score;//current score
 	size_t ghost_multiplier;//multiplier for eaten ghosts
-	std::unique_ptr<Font> text;
+	const std::unique_ptr<Font> text;
 	std::unique_ptr<Font> score_text;//current score text
 };
 

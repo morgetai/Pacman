@@ -38,9 +38,9 @@ public:
 	* @note
 	* @retval
 	*/
-	virtual void render();
+	void render() override;
 private:
-	std::unique_ptr<Image> img;
+	const std::unique_ptr<Image> img;
 	std::vector<Font> texts;
 };
 

@@ -157,7 +157,7 @@ public:
 	* @param3 blue
 	* @retval
 	*/
-	virtual void setColor(Uint8 , Uint8 , Uint8 );
+	void setColor(Uint8 , Uint8 , Uint8 ) override;
 
 	/**
 	* @brief set new text

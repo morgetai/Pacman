@@ -67,7 +67,7 @@ public:
 	* @note  
 	* @retval ACTUATORSTATE
 	*/
-	ACTUATORSTATE get_state() { return state; }
+	ACTUATORSTATE get_state() const { return state; }
 
 	/**/
 protected:

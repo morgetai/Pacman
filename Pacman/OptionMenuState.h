@@ -40,7 +40,7 @@ public:
 	* @param1 engine pointer
 	* @retval
 	*/
-	virtual void run(Engine*);
+	void run(Engine*) override;
 
 	/**
 	* @brief close state
@@ -48,9 +48,9 @@ public:
 	* @param1 engine pointer
 	* @retval
 	*/
-	virtual void close(Engine*);
+	void close(Engine*) override;
 private:
-	std::unique_ptr<Menu_Base> menu;//option menu pointer 
+	const std::unique_ptr<Menu_Base> menu;//option menu pointer 
 };
 
 #endif

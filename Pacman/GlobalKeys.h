@@ -35,7 +35,7 @@ public:
 	* @note
 	* @retval 
 	*/
-	virtual void update();
+	void update() override;
 
 private:
 	std::shared_ptr<Event_listener> ev_listener;

@@ -51,7 +51,7 @@ SDL_Point MovableObjects::get_pos()
 * @note
 * @retval returns current rectangle
 */
-SDL_Rect MovableObjects::get_rect()
+SDL_Rect MovableObjects::get_rect() const
 {
 	return rect;
 }

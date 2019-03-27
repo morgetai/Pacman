@@ -45,7 +45,7 @@ public:
 	* @note
 	* @retval returns current rectangle
 	*/
-	SDL_Rect get_rect();
+	SDL_Rect get_rect() const;
 protected:
 	/**
 	* @brief set object position

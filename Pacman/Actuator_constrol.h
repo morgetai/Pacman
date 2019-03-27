@@ -35,7 +35,7 @@ public:
 	* @note  called when keyboard or mouse event occurred
 	* @retval none
 	*/
-	virtual void update();
+	void update() override;
 
 	/**
 	* @brief attaches actuators to control object

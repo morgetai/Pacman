@@ -75,14 +75,14 @@ public:
 	* @note
 	* @retval
 	*/
-	virtual void render();
+	void render() override;
 
 	/**
 	* @brief move object
 	* @note
 	* @retval new position
 	*/
-	virtual SDL_Rect move();
+	SDL_Rect move() override;
 
 	/**
 	* @brief set pacman state

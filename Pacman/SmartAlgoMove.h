@@ -35,7 +35,7 @@ public:
 	* @param2 move velocity
 	* @retval new move
 	*/
-	virtual Move get_move(SDL_Point, int vel = DefaultValues::GhostVelocity);
+	Move get_move(SDL_Point, int vel = DefaultValues::GhostVelocity) override;
 private:
 
 	/**

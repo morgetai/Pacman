@@ -52,7 +52,7 @@ public:
 	* @param1 Engine pointer
 	* @retval
 	*/
-	virtual void run(Engine*);
+	void run(Engine*) override;
 
 	/**
 	* @brief closes the state
@@ -60,7 +60,7 @@ public:
 	* @param1 Engine pointer
 	* @retval
 	*/
-	virtual void close(Engine*);
+	void close(Engine*) override;
 
 	/**
 	* @brief pause state
