@@ -66,7 +66,7 @@ private:
 	*/
 	void change_state(EngineStateType);
 private:
-	const std::unique_ptr<Window> window;//pointer to the window
+	std::unique_ptr<Window> window;//pointer to the window
 	const std::shared_ptr<Event_listener> EventListener;//
 	const std::shared_ptr<Actuator_control> ActuatorControl;//pointer 
 	const std::shared_ptr<GlobalKeys> globalkeys;

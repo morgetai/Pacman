@@ -13,8 +13,8 @@
 #include"Command_base.h"
 
 /*Base class*/
-template <typename ...Args> 
-class  Command;
+template <typename ...Args>
+class Command;
 
 /*Specialization*/
 template <typename Receiver>

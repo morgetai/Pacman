@@ -34,7 +34,7 @@ Engine::Engine() :
 	mixengine(std::make_unique<MixEngine>()),
 	menumusic(std::make_shared<Music>(DefaultValues::MenuMusic)),
 	gamemusic(std::make_shared<Music>(DefaultValues::GameMusic)),
-	window (std::make_unique<Window>("Pacman")),//creating window
+	//window (std::make_unique<Window>("Pacman")),//creating window
 	globalkeys(std::make_shared<GlobalKeys>(EventListener, this))//creating global keys (ESC, backspace, close)
 {
 	current_state = EngineStateType::STATE_INITIALIZED;
@@ -62,6 +62,7 @@ Engine::Engine() :
 			current_state = EngineStateType::STATE_NOT_INITIALIZED;
 		}
 	}
+	window = std::make_unique<Window>("Pacman");//creating window
 	//creating states
 	states[0] = std::make_unique<MainMenuState>(ActuatorControl, this, window->get_renderer());
 	states[1] = std::make_unique<OptionMenuState>(ActuatorControl, this, mixengine.get(), window->get_renderer());

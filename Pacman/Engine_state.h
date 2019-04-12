@@ -44,7 +44,7 @@ public :
 	bool is_active() { return active; }
 protected:
 	/*Constructor*/
-	EngineState() = default;
+	EngineState();
 	/**
 	* @brief changes the engine state
 	* @note

@@ -11,6 +11,11 @@
 #include"Engine_state.h"
 #include "Engine.h"
 
+/*Constructor*/
+EngineState::EngineState() :
+	active(false)
+{}
+
 /**
 * @brief changes the engine state
 * @note
