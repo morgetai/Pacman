@@ -12,6 +12,8 @@
 /*includes*/
 #include"Menu_Base.h"
 #include<SDL.h>
+#include<string>
+#include<memory>
 /*Predeclared  classes*/
 class Actuator_control;
 class Engine;
