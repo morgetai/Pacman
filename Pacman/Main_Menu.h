@@ -12,6 +12,7 @@
 /*includes*/
 #include<memory>
 #include <vector>
+#include<string>
 #include "Menu_Base.h"
 /*Predeclared  classes*/
 class Image;
